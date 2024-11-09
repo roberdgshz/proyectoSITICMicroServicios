@@ -17,7 +17,7 @@ BEGIN
 		[Image_Path]		varchar(255), -- Ruta de la imagen
 		[Created_At]		datetime default GETDATE(), -- Fecha de creación del producto
 		[Update_At]			datetime default GETDATE(), -- Fecha de última actualización del producto
-		
+		FOREIGN KEY ([Stock_Status_Id]) REFERENCES [dbo].[Stock_Status]([Id])
 	)
 END
 
