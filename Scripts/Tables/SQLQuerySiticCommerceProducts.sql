@@ -21,7 +21,6 @@ BEGIN
 	)
 END
 
-
 /* Create Table Comments */
 IF EXISTS (SELECT * FROM ::fn_listextendedproperty ('MS_Description', 'SCHEMA', 'dbo', 'table', 'Products', NULL, NULL))
 BEGIN
